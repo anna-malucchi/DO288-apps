@@ -20,7 +20,7 @@ RUN rm -rf /run/httpd && mkdir /run/httpd
 
 
 RUN sed -i "s/Listen 80/Listen 8080/g" /etc/httpd/conf/httpd.conf && \
-    sed -i "s/#ServerName www.example.com:80/ServerName 0.0.0.0:8080/g" /etc/httpd7conf/httpd.conf
+    sed -i "s/#ServerName www.example.com:80/ServerName 0.0.0.0:8080/g" /etc/httpd/conf/httpd.conf
 
 # Run as the root user
 USER 1001
