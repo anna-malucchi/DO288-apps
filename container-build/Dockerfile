@@ -1,4 +1,5 @@
-FROM registry.access.redhat.com/ubi8/ubi:8.0
+FROM quay.io/redhattraining/httpd-parent
+
 
 ENV DOCROOT=/var/www/html
 
